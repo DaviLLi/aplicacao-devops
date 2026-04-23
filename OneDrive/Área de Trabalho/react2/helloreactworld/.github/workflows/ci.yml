@@ -1,0 +1,23 @@
+name : CI
+
+on : 
+  push: 
+    branches: ["main"]
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/setup-node@v3
+
+      - name: Setup node  
+        uses: actions/setup-node@v3
+        whith:
+          node-version:'18'
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Run ESLint
+        run: npm run lint

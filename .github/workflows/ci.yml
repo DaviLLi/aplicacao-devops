@@ -9,13 +9,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout código
-        uses: actions/Checkout@v3
+      - name: checkout código
+        uses: actions/checkout@v3
 
       - name: Setup node  
         uses: actions/setup-node@v3
-        whith:
-          node-version:'18'
+        with:
+           node-version:'18'
+
       - name: Instalar dependências
         run: npm install
 

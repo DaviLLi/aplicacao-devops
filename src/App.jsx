@@ -13,4 +13,4 @@ function App() {
 
 export default App
 
-const teste = 123;
+

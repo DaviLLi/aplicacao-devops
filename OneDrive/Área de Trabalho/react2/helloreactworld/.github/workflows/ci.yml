@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Checkout código
-        uses: actions/setup-node@v3
+        uses: actions/Checkout@v3
 
       - name: Setup node  
         uses: actions/setup-node@v3
